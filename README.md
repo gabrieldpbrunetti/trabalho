@@ -85,7 +85,7 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
-    OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
+    OBS: Usar o colab para apresentar os resultados que devem incluir as instruções SQL + resultados em forma de tabela.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
@@ -124,7 +124,8 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 
 ># Marco de Entrega 02: Do item 9.2 até o ítem 9.10<br>
 
-### 10 RELATÓRIOS E GRÁFICOS
+### 10 RELATÓRIOS E GRÁFICOS (Usar template disponibilizado)
+[Template de relatórios](https://github.com/discipbdint/public_samples/blob/main/BD_Exemplo_Relatorios_Empresa_VA.ipynb "Template relatórios")
 
 #### a) análises e resultados provenientes do banco de dados desenvolvido (usar modelo disponível)
 #### b) link com exemplo de relatórios será disponiblizado pelo professor no AVA
