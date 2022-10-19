@@ -5,8 +5,8 @@ Trabalho desenvolvido durante a disciplina de Banco de dados
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
-primeiro_componente_do_grupo:email_primeiro_componente@dominio.com<br>
-segundo_componente_do_grupo:email_segundo_componente@dominio.com<br>
+primeiro_componente_do_grupo: email_primeiro_componente@dominio.com<br>
+segundo_componente_do_grupo: halissonjulio@gmail.com<br>
 ...<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
