@@ -13,7 +13,7 @@ Pedro Antônio Barcelos de Oliveira: pedrocec@gmail.com<br>
 Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
 <br>e motivação da escolha realizada. <br>
 
-> A empresa "Devcom Projetos" visa colaborar com desenvolvimento de projetos para uma sociedade melhor. Sabendo-se dos desafios para gerenciar projetos dentro de uma empresa e visando unir as informações relativas a funcionários, departamentos e projetos em um mesmo local, ficamos motivados com o desenvolvimento deste sistema. O Sistema "Devcom" tem como objetivo gerenciar todas as informações ao desenvolvimento das atividades de projetos em diversas localidades do país. Para realizar suas operações adequadamente e empresa necessita que sistema que armazene informações relativas aos Projetos, Departamentos e Empregados, além de também armazenar dados sobre  Dependentes e Históricos de Salário dos empregados. O sistema deverá gerar um conjunto de relatórios que por sua vez atenderá os anseios da empresa em questão.
+> A empresa Far a Whey propõe um modelo de delivery de suplementos, um mercado muito pouco explorado e com muito potencial de crescimento, haja a visto a recente explosão de material, conteúdo e interesse a respeito da área. O modelo proposto busca simplificar todo o processo de fornecimento dos produtos até à entrega para o cliente, visando proporcionar uma boa experiência para os consumidores.
  
 
 ### 3.MINI-MUNDO<br>
