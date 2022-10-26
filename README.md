@@ -5,9 +5,9 @@ Trabalho desenvolvido durante a disciplina de Banco de dados
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
-primeiro_componente_do_grupo: email_primeiro_componente@dominio.com<br>
-segundo_componente_do_grupo: halissonjulio@gmail.com<br>
-...<br>
+Gabriel de Paula Brunetti: gabrieldpbrunetti@gmail.com<br>
+Halisson Julio Lopes Pereira: halissonjulio@gmail.com<br>
+Pedro Antônio Barcelos de Oliveira: pedrocec@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
 Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
