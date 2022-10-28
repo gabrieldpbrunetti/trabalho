@@ -60,25 +60,51 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 #### 5.2 Descrição dos dados 
     [objeto]: [descrição do objeto]
   
-  ---TABELAS---<br>
+  ---TABELA PESSOA---<br>
   PESSOA: tabela de generalização, armazena às informações comuns à qualquer tipo de pessoa, jurídica ou física, sendo o supertipo de funcionario, cliente, entregador e distribuidora.<br>
-  CLIENTE: tabela que armazena as informações relativas à um cliente.<br>
-  FUNCIONARIO: tabela que armazena os dados referentes aos funcionários da empresa.<br>
-  ENTREGADOR: tabela que armazena os dados referentes à um entregador.<br>
-  VEICULO: tabela que armazena os dados referentes a um veículo da empresa.
-  DISTRIBUIDORA: tabela que armazena os dados referentes à uma distribuidora.<br>
-  ---ATRIBUTOS---<br>
   CODIGO: atributo que armazena um inteiro que será a chave primária da tabela.<br>
-  NOME: atributo que armazena o nome da pessoa.<br>
+  NOME: atributo que armazena o nome da pessoa ou produto.<br>
   TELEFONE: atributo que armazena o telenofe da pessoa.<br>
-  CPF: atributo que armazena os dados referentes ao cadastro de pessoa física de uma pessoa.<br>
+ 
+  ---TABELA CLIENTE---<br>
+  CLIENTE: tabela que armazena as informações relativas à um cliente.<br>
+  CPF: atributo que armazena os dados referentes ao cadastro de pessoa física de uma pessoa, é a chave primária da tabela.<br>
   ENDERECO: atributo composto que armazena todos os dados referentes ao endereço do cliente(tipo de logradouro, descrião do logradouro, numero do imóvel, cidade, unidade federativa e complemento).<br>
-  EMAIL: atributo que armazena o email de um funcionário ou distribuídora.<br>
+ 
+  ---TABELA FUNCIONARIO---<br>
+  FUNCIONARIO: tabela que armazena os dados referentes aos funcionários da empresa.<br>
+  CPF: atributo que armazena os dados referentes ao cadastro de pessoa física de uma pessoa, é a chave primária da tabela.<br>
   SALARIO: atributo que aramzena um número real referente ao salário do funcionário.<br>
+  EMAIL: atributo que armazena o email de um funcionário ou distribuídora.<br>
+ 
+  ---TABELA ENTREGADOR---<br>
+  ENTREGADOR: tabela que armazena os dados referentes à um entregador.<br>
+  CPF: atributo que armazena os dados referentes ao cadastro de pessoa física de uma pessoa, é a chave primária da tabela.<br>
   CNH: atributo que armazena os dados refetentes à Carteira Nacional de Habilitação de um entregador.<br>
-  TIPO_VEICULO: atributo que armazena o tipo do veículo, ex: moto.<br>
-  PLACA: atributo que armazena a placa do veículo.<br>
-  CNPJ: atributo que armazena o Cadastro Nacional de Pessoa Jurídica de uma distribuidora.<br>
+ 
+  ---TABELA VEICULO---<br>
+  VEICULO: tabela que armazena os dados referentes a um veículo da empresa.<br>
+  PLACA: atributo que armazena a placa do veículo, é a chave primária da tabela.<br>
+  TIPO: atributo que armazena o tipo do veículo, ex: moto.<br>
+  MODELO: atributo que armazena o modelo do veículo.<br>
+ 
+  ---TABELA DISTRIBUIDORA---<br>
+  DISTRIBUIDORA: tabela que armazena os dados referentes à uma distribuidora.<br>
+  CNPJ: atributo que armazena o Cadastro Nacional de Pessoa Jurídica de uma distribuidora, é a chave primária da tabela.<br>
+  EMAIL: atributo que armazena o email de um funcionário ou distribuídora.<br>
+ 
+  ---TABELA PEDIDO---<br>
+  PEDIDO: tabela que armazena os dados de um pedido.<br>
+  DT_COMPRA: atributo que armazena a data de compra de um pedido.
+  CODIGO: atributo que armazena um inteiro que será a chave primária da tabela.<br>
+  METODO_PAGAMENTO: atributo que armazena o metodo de pagamento de um pedido.<br>
+ 
+  ---TABELA PRODUTO---<br>
+  PRODUTO: tabela que armazena os dados de um produto.<br>
+  CODIGO: atributo que armazena um inteiro que será a chave primária da tabela.<br> 
+  NOME: atributo que armazena o nome do produto.<br
+  PRECO_VENDA: atributo que armazena o preço que o produto é vendido pela empresa.<br>
+  PRECO_COMPRA: atributo que armazeza o preço que o produto é comprado pela empresa.<br>
   
   
   
@@ -88,6 +114,7 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
         a) inclusão do esquema lógico do banco de dados
         b) verificação de correspondencia com o modelo conceitual 
         (não serão aceitos modelos que não estejam em conformidade)
+ ![Alt text](https://github.com/gabrieldpbrunetti/trabalho/blob/main/conceitual_grupo.png)
 
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
