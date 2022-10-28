@@ -48,7 +48,7 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas (Aplicar os conceitos de normalização abordados).   
         
-![Alt text](https://github.com/gabrieldpbrunetti/trabalho/blob/main/conceitual_grupo.png)
+![Alt text](https://github.com/gabrieldpbrunetti/trabalho/blob/main/mod_conceitual_grupo.png)
     
     
         
