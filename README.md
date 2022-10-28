@@ -32,12 +32,11 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
     
 > a) A empresa Far a Whey poderá entregar relatórios e informações como, o lucro total obtido na venda dos produtos, os produtos que mais são vendidos bem como as distribuidoras que mais vendem, além de dados mais técnicos como por exemplo a quantidade de vezes que um veículo foi alocado por um entregador, assim controlando o desgaste do veículo, os funcionários que estão com mais pedidos sob sua responsabilidade de reserva etc.
-   
-b)  • Relatório que informa o lucro da empresa, através da soma do preço de venda dos produtos de todos os pedidos, seguido da subtração do preço de compra
-    • Relatório que informa os produtos e os tipos de produtos que mais vendem na empresa.
-    • Relatório dos veículos mais utilizados nas entregas, a fim de evitar que um veículo seja desgastado em excesso.
-    • Relatório que compara os preços dos produtos que cada distribuidora vende.
-    • Relatório que mostre em quantos pedidos um funcionário está alocado para efetuar a reserva dos produtos.
+* Relatório que informa o lucro da empresa, através da soma do preço de venda dos produtos de todos os pedidos, seguido da subtração do preço de compra
+* Relatório que informa os produtos e os tipos de produtos que mais vendem na empresa.
+* Relatório dos veículos mais utilizados nas entregas, a fim de evitar que um veículo seja desgastado em excesso.
+* Relatório que compara os preços dos produtos que cada distribuidora vende.
+* Relatório que mostre em quantos pedidos um funcionário está alocado para efetuar a reserva dos produtos.
 
  ### 5.MODELO CONCEITUAL<br>
     A) Utilizar a Notação adequada (Preferencialmente utilizar o BR Modelo 3)
