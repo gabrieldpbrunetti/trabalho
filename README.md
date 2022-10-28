@@ -119,7 +119,7 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
         (criação de tabelas, alterações, etc..)
-link: https://raw.githubusercontent.com/gabrieldpbrunetti/trabalho/main/mod_fisico.sql
+link do modelo físico: https://raw.githubusercontent.com/gabrieldpbrunetti/trabalho/main/mod_fisico.sql
 <br>
         
        
