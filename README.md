@@ -59,10 +59,29 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 
 #### 5.2 Descrição dos dados 
     [objeto]: [descrição do objeto]
-    
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+  
+  ---TABELAS---<br>
+  PESSOA: tabela de generalização, armazena às informações comuns à qualquer tipo de pessoa, jurídica ou física, sendo o supertipo de funcionario, cliente, entregador e distribuidora.<br>
+  CLIENTE: tabela que armazena as informações relativas à um cliente.<br>
+  FUNCIONARIO: tabela que armazena os dados referentes aos funcionários da empresa.<br>
+  ENTREGADOR: tabela que armazena os dados referentes à um entregador.<br>
+  VEICULO: tabela que armazena os dados referentes a um veículo da empresa.
+  DISTRIBUIDORA: tabela que armazena os dados referentes à uma distribuidora.<br>
+  ---ATRIBUTOS---<br>
+  CODIGO: atributo que armazena um inteiro que será a chave primária da tabela.<br>
+  NOME: atributo que armazena o nome da pessoa.<br>
+  TELEFONE: atributo que armazena o telenofe da pessoa.<br>
+  CPF: atributo que armazena os dados referentes ao cadastro de pessoa física de uma pessoa.<br>
+  ENDERECO: atributo composto que armazena todos os dados referentes ao endereço do cliente(tipo de logradouro, descrião do logradouro, numero do imóvel, cidade, unidade federativa e complemento).<br>
+  EMAIL: atributo que armazena o email de um funcionário ou distribuídora.<br>
+  SALARIO: atributo que aramzena um número real referente ao salário do funcionário.<br>
+  CNH: atributo que armazena os dados refetentes à Carteira Nacional de Habilitação de um entregador.<br>
+  TIPO_VEICULO: atributo que armazena o tipo do veículo, ex: moto.<br>
+  PLACA: atributo que armazena a placa do veículo.<br>
+  CNPJ: atributo que armazena o Cadastro Nacional de Pessoa Jurídica de uma distribuidora.<br>
+  
+  
+  
 
 
 ### 6	MODELO LÓGICO<br>
