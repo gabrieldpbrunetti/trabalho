@@ -119,7 +119,6 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
         (criação de tabelas, alterações, etc..)
-        DROP TABLE IF EXISTS PESSOA, FUNCIONARIO, CLIENTE, ENTREGADOR, DISTRIBUIDORA, UTILIZA, VEICULO, FORNECE, PRODUTO, CONTEM, RESERVA, PEDIDO CASCADE;
 
 CREATE TABLE PESSOA (
 	codigo INTEGER PRIMARY KEY,
