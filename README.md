@@ -31,13 +31,13 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
     a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
     
-> A Empresa DevCom precisa inicialmente dos seguintes relatórios:
-* Relatório que mostre o nome de cada supervisor(a) e a quantidade de empregados supervisionados.
-* Relatório relativo aos os supervisores e supervisionados. O resultado deve conter o nome do supervisor e nome do supervisionado além da quantidade total de horas que cada supervisionado tem alocada aos projetos existentes na empresa.
-* Relatorio que mostre para cada linha obtida o nome do departamento, o valor individual de cada salario existente no  departamento e a média geral de salarios dentre todos os empregados. Os resultados devem ser apresentados ordenados por departamento.
-* Relatório que mostre as informações relacionadas a todos empregados de empresa (sem excluir ninguém). As linhas resultantes devem conter informações sobre: rg, nome, salario do empregado, data de início do salario atual, nomes dos projetos que participa, quantidade de horas e localização nos referidos projetos, numero e nome dos departamentos aos quais está alocado, informações do historico de salário como inicio, fim, e valores de salarios antigos que foram inclusos na referida tabela (caso possuam informações na mesma), além de todas informações relativas aos dependentes. 
->> ##### Observações: <br> a) perceba que este relatório pode conter linhas com alguns dados repetidos (mas não todos). <br>  b) para os empregados que não possuirem alguma destas informações o valor no registro deve aparecer sem informação/nulo. 
-* Relatório que obtenha a frequencia absoluta e frequencia relativa da quantidade de cpfs únicos no relatório anterior. Apresente os resultados ordenados de forma decrescente pela frequencia relativa.
+> a) A empresa Far a Whey poderá entregar relatórios e informações como, o lucro total obtido na venda dos produtos, os produtos que mais são vendidos bem como as distribuidoras que mais vendem, além de dados mais técnicos como por exemplo a quantidade de vezes que um veículo foi alocado por um entregador, assim controlando o desgaste do veículo, os funcionários que estão com mais pedidos sob sua responsabilidade de reserva etc.
+   
+b)  • Relatório que informa o lucro da empresa, através da soma do preço de venda dos produtos de todos os pedidos, seguido da subtração do preço de compra
+    • Relatório que informa os produtos e os tipos de produtos que mais vendem na empresa.
+    • Relatório dos veículos mais utilizados nas entregas, a fim de evitar que um veículo seja desgastado em excesso.
+    • Relatório que compara os preços dos produtos que cada distribuidora vende.
+    • Relatório que mostre em quantos pedidos um funcionário está alocado para efetuar a reserva dos produtos.
 
  ### 5.MODELO CONCEITUAL<br>
     A) Utilizar a Notação adequada (Preferencialmente utilizar o BR Modelo 3)
