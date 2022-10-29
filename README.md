@@ -132,7 +132,7 @@ link do modelo físico: https://raw.githubusercontent.com/gabrieldpbrunetti/trab
 
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
-    https://colab.research.google.com/drive/1CtJPv5HX6Zr0VX7vr2p20nrTGeuu099l?usp=sharing#scrollTo=F0-FEmeYzfGw <br>
+    https://colab.research.google.com/drive/1CtJPv5HX6Zr0VX7vr2p20nrTGeuu099l?usp=sharing#scrollTo=F0-FEmeYzfGw
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
