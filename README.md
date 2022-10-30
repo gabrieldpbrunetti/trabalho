@@ -130,6 +130,8 @@ link do modelo físico: https://raw.githubusercontent.com/gabrieldpbrunetti/trab
         (em caso de falha na restauração o grupo não pontuará neste quesito)
         c) formato .SQL
 
+Link dos inserts: https://raw.githubusercontent.com/gabrieldpbrunetti/trabalho/main/BD_INSERT_GRUPO_MOISES.txt
+
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
     https://colab.research.google.com/drive/1CtJPv5HX6Zr0VX7vr2p20nrTGeuu099l?usp=sharing#scrollTo=F0-FEmeYzfGw
