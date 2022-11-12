@@ -140,7 +140,7 @@ Link dos inserts: https://raw.githubusercontent.com/gabrieldpbrunetti/trabalho/m
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
-#### CONSULTAS DE 9.1 A 9.10<br>
+#### CONSULTAS DE 9.2 A 9.10<br>
    https://colab.research.google.com/drive/1NDkvTkNn-Wm9eH-5PkVenHi39T9NgvG6?usp=sharing
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
