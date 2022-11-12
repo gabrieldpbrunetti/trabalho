@@ -24,7 +24,7 @@ Descrição textual das regras de negócio definidas como um  subconjunto do mun
 cujos elementos são propriedades que desejamos incluir, processar, armazenar, 
 gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 
->Neste modelo existe uma tabela PESSOA, a qual armazena um código e o nome da pessoa, existe também a tabela CONTATO que por sua vez guarda o tipo de contato e o contato em si, uma PESSOA pode ter 1 ou vários CONTATOS, mas um CONTATO só pode pertencer a uma pessoa. A tabela PESSOA é supertipo de duas outras tabelas, PESSOA JURÍDICA e PESSOA FÍSICA, estas por sua vez armazenam respectivamente cnpj e cpf. Uma PESSOA FÍSICA pode possuir nenhum ou apenas um endereço e um endereço pertence a apenas uma PESSOA FÍSICA, sendo que ENDEREÇO armazena os seguintes atributos: código, cep, tipo de logradouro, logradouro,  bairro, cidade, unidade federativa, numero do imóvel e complemento. Uma PESSOA FÍSICA pode fazer nenhum ou vários pedidos e um pedido é feito por apenas uma PESSOA FÍSICA , ao mesmo tempo que uma PESSOA FÍSICA pode reservar nenhum ou vários pedidos, assim como um pedido é reservado por uma ou várias PESSOAS FÍSICAS . A tabela PEDIDO armazena um código, o método de pagamento e a data de compra. Uma PESSOA FÍSICA também pode utilizar nenhum ou vários VEÍCULOS e um VEÍCULO é utilizado por nenhum ou várias PESSOAS FÍSICAS, sendo que VEÍCULO armazena o tipo do veículo, o nome do veículo e placa. Já a PESSOA JURÍDICA pode fornecer 1 ou vários PRODUTOS e um PRODUTO pode ser fornecido por 1 ou várias PESSOAS JURÍDICAS, PRODUTO por sua vez armazena: código, preço pelo qual foi comprado, preço pelo qual será vendido além do nome do produto. Por fim a tabela PEDIDO pode conter 1 ou vários PRODUTOS e um PRODUTO pode estar em nenhum ou vários PEDIDOS.
+>Neste modelo existe uma tabela PESSOA, a qual armazena um código e o nome da pessoa, existe também a tabela CONTATO que por sua vez guarda o tipo de contato e o contato em si, uma PESSOA pode ter 1 ou vários CONTATOS, mas um CONTATO só pode pertencer a uma pessoa. A tabela PESSOA é supertipo de duas outras tabelas, PESSOA JURÍDICA e PESSOA FÍSICA, estas por sua vez armazenam respectivamente cnpj e cpf. Uma PESSOA FÍSICA pode possuir nenhum ou apenas um endereço e um endereço pertence a apenas uma PESSOA FÍSICA, sendo que ENDEREÇO armazena os seguintes atributos: código, cep, tipo de logradouro, logradouro,  bairro, cidade, unidade federativa, numero do imóvel e complemento. Uma PESSOA FÍSICA pode fazer nenhum ou vários pedidos e um pedido é feito por apenas uma PESSOA FÍSICA , ao mesmo tempo que uma PESSOA FÍSICA pode reservar nenhum ou vários pedidos, assim como um pedido é reservado por uma ou várias PESSOAS FÍSICAS . A tabela PEDIDO armazena um código, o método de pagamento e a data de compra. Uma PESSOA FÍSICA também pode entrega nenhum ou vários PEDIDDO e um PEDIDO é entreue por nenhum ou várias PESSOAS FÍSICAS, VEÍCULO armazena o tipo do veículo, o nome do veículo e placa é utilizado para entrega nenhum ou vários PEDIDO e um PEDIDO é entregue com um veículo. Já a PESSOA JURÍDICA pode fornecer 1 ou vários PRODUTOS e um PRODUTO pode ser fornecido por 1 ou várias PESSOAS JURÍDICAS, PRODUTO por sua vez armazena: código, preço pelo qual foi comprado, preço pelo qual será vendido além do nome do produto. Por fim a tabela PEDIDO pode conter 1 ou vários PRODUTOS e um PRODUTO pode estar em nenhum ou vários PEDIDOS.
 
 ### 4.PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
@@ -48,7 +48,7 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas (Aplicar os conceitos de normalização abordados).   
         
-![Alt text](https://github.com/gabrieldpbrunetti/trabalho/blob/main/conceitual_grupo_moises_atualizado.png)
+![Alt text](https://github.com/gabrieldpbrunetti/trabalho/blob/main/conceitual_atualizado2.png)
     
     
         
@@ -116,7 +116,7 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
         a) inclusão do esquema lógico do banco de dados
         b) verificação de correspondencia com o modelo conceitual 
         (não serão aceitos modelos que não estejam em conformidade)
- ![Alt text](https://github.com/gabrieldpbrunetti/trabalho/blob/main/logico_grupo_moises_atualizado.png)
+ ![Alt text](https://github.com/gabrieldpbrunetti/trabalho/blob/main/logico_atualizado2.png)
 
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
