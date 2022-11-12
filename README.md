@@ -150,6 +150,7 @@ Link dos inserts: https://raw.githubusercontent.com/gabrieldpbrunetti/trabalho/m
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     a) Criar outras 5 consultas que envolvam like ou ilike
     b) Criar uma consulta para cada tipo de função data apresentada.
+    https://colab.research.google.com/drive/1NDkvTkNn-Wm9eH-5PkVenHi39T9NgvG6#scrollTo=KzV33Vjxir6Z
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
     a) Criar minimo 3 de exclusão
