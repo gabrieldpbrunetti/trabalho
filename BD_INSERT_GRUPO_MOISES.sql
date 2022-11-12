@@ -210,7 +210,7 @@ INSERT INTO ENDERECO VALUES
 			(50,'29215-670','ES','Guarapari','Pontal de Santa Mônica','Rua','Rua das Fragatas',1450,'','256.246.196-56'),
 			(49,'59122-498','RN','Natal','Redinha','Travessa','Travessa Construtor Severino Bezerra',839,'','387.260.653-66'),
 			(48,'59076-665','RN','Natal','Lagoa Nova','Travessa','Travessa Ministro Macedo Soares',526,'','341.800.533-16'),
-			(47,'40315-360','BA','Salvador','Pau Miúdo','Rua','Rua Madalena Paraguassu',5173,'','616.465.372-62')),
+			(47,'40315-360','BA','Salvador','Pau Miúdo','Rua','Rua Madalena Paraguassu',5173,'','616.465.372-62'),
 			(46,'69311-054','RR','Boa Vista','Cauamé','Rua','Rua França',5959,'','145.545.574-40'),
 			(45,'71827-610','DF','Brasília','Riacho Fundo I','Chácara','Chácara 17',7578,'(Colônia Agrícola Sucupira)','264.420.503-85'),
 			(44,'21831-335','RJ','Rio de Janeiro','Senador Camará','Rua','Rua Mário da Fonseca',2797,'','472.697.785-21'),
