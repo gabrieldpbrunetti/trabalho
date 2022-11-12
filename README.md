@@ -24,7 +24,7 @@ Descrição textual das regras de negócio definidas como um  subconjunto do mun
 cujos elementos são propriedades que desejamos incluir, processar, armazenar, 
 gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 
->Uma empresa de venda de suplementos alimentares, a Far A Whey, deseja ter controle sobre as entregas de seus pedidos e sobre o fornecimento de seus produtos. Para isso deseja armazenar de PESSOA dados como: codigo, nome e telefone. É importante destacar que PESSOA é um supertipo. Do FUNCIONARIO se armazena dados como: cpf, email e salario; É importante destacar que um Funcionário pode reservar um ou vários pedidos e um ou vários pedidos podem ser reservados por um ou vários funcionários.  Do CLIENTE se armazena: cpf e endereco (logradouro, descricao, numero_imovel, cidade, unidade_federativa, complemento) ; É importante destacar que um cliente pode comprar um ou vários pedidos; Do ENTREGADOR o: cpf e cnh; um ou vários Entregadores podem entregar nenhum ou vários pedidos e um ou vários entregadores podem utilizar um ou vários veículos; Da DISTRIBUIDORA se armazena: cnpj e email; A Distribuidora fornece um ou vários produtos e são fornecidos um ou vários produtos pela distribuidora, computando a qtd; Do PEDIDO: codigo, dt_compra e metodo_pagamento; Um pedido contém um ou vários produtos e um produto contém nenhum ou vários pedidos; Do VEICULO: placa, modelo, tipo; Do  PRODUTO: codigo, nome, preco_venda, preco_compra; E por fim, relações como Contem e Fornece armazenam qtd.
+>Neste modelo existe uma tabela PESSOA, a qual armazena um código e o nome da pessoa, existe também a tabela CONTATO que por sua vez guarda o tipo de contato e o contato em si, uma PESSOA pode ter 1 ou vários CONTATOS, mas um CONTATO só pode pertencer a uma pessoa. A tabela PESSOA é supertipo de duas outras tabelas, PESSOA JURÍDICA e PESSOA FÍSICA, estas por sua vez armazenam respectivamente cnpj e cpf. Uma PESSOA FÍSICA pode possuir nenhum ou apenas um endereço e um endereço pertence a apenas uma PESSOA FÍSICA, sendo que ENDEREÇO armazena os seguintes atributos: código, cep, tipo de logradouro, logradouro,  bairro, cidade, unidade federativa, numero do imóvel e complemento. Uma PESSOA FÍSICA pode fazer nenhum ou vários pedidos e um pedido é feito por apenas uma PESSOA FÍSICA , ao mesmo tempo que uma PESSOA FÍSICA pode reservar nenhum ou vários pedidos, assim como um pedido é reservado por uma ou várias PESSOAS FÍSICAS . A tabela PEDIDO armazena um código, o método de pagamento e a data de compra. Uma PESSOA FÍSICA também pode utilizar nenhum ou vários VEÍCULOS e um VEÍCULO é utilizado por nenhum ou várias PESSOAS FÍSICAS, sendo que VEÍCULO armazena o tipo do veículo, o nome do veículo e placa. Já a PESSOA JURÍDICA pode fornecer 1 ou vários PRODUTOS e um PRODUTO pode ser fornecido por 1 ou várias PESSOAS JURÍDICAS, PRODUTO por sua vez armazena: código, preço pelo qual foi comprado, preço pelo qual será vendido além do nome do produto. Por fim a tabela PEDIDO pode conter 1 ou vários PRODUTOS e um PRODUTO pode estar em nenhum ou vários PEDIDOS.
 
 ### 4.PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
@@ -48,50 +48,36 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas (Aplicar os conceitos de normalização abordados).   
         
-![Alt text](https://github.com/gabrieldpbrunetti/trabalho/blob/main/mod_conceitual_grupo.png)
+![Alt text](https://github.com/gabrieldpbrunetti/trabalho/blob/main/conceitual_grupo_moises_atualizado.png)
     
     
         
     
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
-    [Grupo02]: [Nomes dos que participaram na avaliação]
+    [Grupo01]: [Gustavo, Rafael]
+    [Grupo02]: [Caio, Paulo Vitor]
 
 #### 5.2 Descrição dos dados 
     [objeto]: [descrição do objeto]
   
   ---TABELA PESSOA---<br>
-  PESSOA: tabela de generalização, armazena às informações comuns à qualquer tipo de pessoa, jurídica ou física, sendo o supertipo de funcionario, cliente, entregador e distribuidora.<br>
+  PESSOA: tabela de generalização, sendo supertipo de PESSOA FÍSICA e PESSOA JURÍDICA.<br>
   CODIGO: atributo que armazena um inteiro que será a chave primária da tabela.<br>
   NOME: atributo que armazena o nome da pessoa ou produto.<br>
-  TELEFONE: atributo que armazena o telenofe da pessoa.<br>
  
-  ---TABELA CLIENTE---<br>
-  CLIENTE: tabela que armazena as informações relativas à um cliente.<br>
-  CPF: atributo que armazena os dados referentes ao cadastro de pessoa física de uma pessoa, é a chave primária da tabela.<br>
-  ENDERECO: atributo composto que armazena todos os dados referentes ao endereço do cliente(tipo de logradouro, descrião do logradouro, numero do imóvel, cidade, unidade federativa e complemento).<br>
+ ---TABELA PESSOA_FISICA---<br>
+ PESSOA_FISICA: tabela que armazena os dados de uma pessoa física.<br>
+ CPF: armazena o cpf(cadastro de pessoa física) referente a uma pessoa física.<br>
  
-  ---TABELA FUNCIONARIO---<br>
-  FUNCIONARIO: tabela que armazena os dados referentes aos funcionários da empresa.<br>
-  CPF: atributo que armazena os dados referentes ao cadastro de pessoa física de uma pessoa, é a chave primária da tabela.<br>
-  SALARIO: atributo que aramzena um número real referente ao salário do funcionário.<br>
-  EMAIL: atributo que armazena o email de um funcionário ou distribuídora.<br>
- 
-  ---TABELA ENTREGADOR---<br>
-  ENTREGADOR: tabela que armazena os dados referentes à um entregador.<br>
-  CPF: atributo que armazena os dados referentes ao cadastro de pessoa física de uma pessoa, é a chave primária da tabela.<br>
-  CNH: atributo que armazena os dados refetentes à Carteira Nacional de Habilitação de um entregador.<br>
+ ---TABELA PESSOA_JURIDICA---<br>
+ PESSOA_JURIDICA: tabela que armazena os dados de uma pessoa jurídica.<br>
+ CNPJ: armazena o cnpj(cadastro nacional de pessoa jurídica) referente a uma pessoa.<br>
  
   ---TABELA VEICULO---<br>
   VEICULO: tabela que armazena os dados referentes a um veículo da empresa.<br>
   PLACA: atributo que armazena a placa do veículo, é a chave primária da tabela.<br>
   TIPO: atributo que armazena o tipo do veículo, ex: moto.<br>
   MODELO: atributo que armazena o modelo do veículo.<br>
- 
-  ---TABELA DISTRIBUIDORA---<br>
-  DISTRIBUIDORA: tabela que armazena os dados referentes à uma distribuidora.<br>
-  CNPJ: atributo que armazena o Cadastro Nacional de Pessoa Jurídica de uma distribuidora, é a chave primária da tabela.<br>
-  EMAIL: atributo que armazena o email de um funcionário ou distribuídora.<br>
  
   ---TABELA PEDIDO---<br>
   PEDIDO: tabela que armazena os dados de um pedido.<br>
@@ -106,6 +92,22 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
   PRECO_VENDA: atributo que armazena o preço que o produto é vendido pela empresa.<br>
   PRECO_COMPRA: atributo que armazeza o preço que o produto é comprado pela empresa.<br>
   
+  ---TABELA ENDERECO---<br>
+  ENDERECO: tabela que armazena todos os dados de um endereço.<br>
+  CODIGO: armazena um codigo de identificação.<br>
+  CEP: armazena o cep do endereço.<br>
+  TIPO_LOGRADOURO: armazena o tipo de logradouro do endereço.<br>
+  LOGRADOURO: armazena a descricao do logradouro.<br>
+  CIDADE: armazena a cidade do endereço.<br>
+  UF: armazena a unidade federativa do endereço.<br>
+  NUMERO_IMOVEL: armazena o numero do imóvel do endereço.<br>
+  COMPLEMENTO: armazena o complemento do imóvel do endereço.<br>
+  
+  ---TABELA CONTATO---<br>
+  CONTATO: armazena os contatos de uma pessoa.<br>
+  TIPO_CONTATO: armazena o tipo do contato armazenado.<br>
+  CONTATO: armazena o contato em si.<br>
+  
   
   
 
@@ -114,7 +116,7 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
         a) inclusão do esquema lógico do banco de dados
         b) verificação de correspondencia com o modelo conceitual 
         (não serão aceitos modelos que não estejam em conformidade)
- ![Alt text](https://github.com/gabrieldpbrunetti/trabalho/blob/main/logico_grupo_moises.png)
+ ![Alt text](https://github.com/gabrieldpbrunetti/trabalho/blob/main/logico_grupo_moises_atualizado.png)
 
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
@@ -130,7 +132,7 @@ link do modelo físico: https://raw.githubusercontent.com/gabrieldpbrunetti/trab
         (em caso de falha na restauração o grupo não pontuará neste quesito)
         c) formato .SQL
 
-Link dos inserts: https://raw.githubusercontent.com/gabrieldpbrunetti/trabalho/main/BD_INSERT_GRUPO_MOISES.txt
+Link dos inserts: https://raw.githubusercontent.com/gabrieldpbrunetti/trabalho/main/BD_INSERT_GRUPO_MOISES.sql
 
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
