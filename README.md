@@ -140,6 +140,8 @@ Link dos inserts: https://raw.githubusercontent.com/gabrieldpbrunetti/trabalho/m
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
+#### CONSULTAS DE 9.1 A 9.10<br>
+   https://colab.research.google.com/drive/1NDkvTkNn-Wm9eH-5PkVenHi39T9NgvG6?usp=sharing
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
@@ -150,7 +152,6 @@ Link dos inserts: https://raw.githubusercontent.com/gabrieldpbrunetti/trabalho/m
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     a) Criar outras 5 consultas que envolvam like ou ilike
     b) Criar uma consulta para cada tipo de função data apresentada.
-    https://colab.research.google.com/drive/1NDkvTkNn-Wm9eH-5PkVenHi39T9NgvG6#scrollTo=KzV33Vjxir6Z
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
     a) Criar minimo 3 de exclusão
