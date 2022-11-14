@@ -141,7 +141,7 @@ Link dos inserts: https://raw.githubusercontent.com/gabrieldpbrunetti/trabalho/m
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 #### CONSULTAS DE 9.2 A 9.10<br>
-   https://colab.research.google.com/drive/1NDkvTkNn-Wm9eH-5PkVenHi39T9NgvG6?usp=sharing
+   https://colab.research.google.com/drive/1mhTehQ3Nr7lqzYDr8xXDswprAHm0dby8#scrollTo=HyOXtnZD9Jvm
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
