@@ -24,7 +24,7 @@ Descrição textual das regras de negócio definidas como um  subconjunto do mun
 cujos elementos são propriedades que desejamos incluir, processar, armazenar, 
 gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 
->Neste modelo existe uma tabela PESSOA, a qual armazena um código e o nome da pessoa, existe também a tabela CONTATO que por sua vez guarda o tipo de contato e o contato em si, uma PESSOA pode ter 1 ou vários CONTATOS, mas um CONTATO só pode pertencer a uma pessoa. A tabela PESSOA é supertipo de duas outras tabelas, PESSOA JURÍDICA e PESSOA FÍSICA, estas por sua vez armazenam respectivamente cnpj e cpf. Uma PESSOA FÍSICA pode possuir nenhum ou apenas um endereço e um endereço pertence a apenas uma PESSOA FÍSICA, sendo que ENDEREÇO armazena os seguintes atributos: código, cep, tipo de logradouro, logradouro,  bairro, cidade, unidade federativa, numero do imóvel e complemento. Uma PESSOA FÍSICA pode fazer nenhum ou vários pedidos e um pedido é feito por apenas uma PESSOA FÍSICA , ao mesmo tempo que uma PESSOA FÍSICA pode reservar nenhum ou vários pedidos, assim como um pedido é reservado por uma ou várias PESSOAS FÍSICAS . A tabela PEDIDO armazena um código, o método de pagamento e a data de compra. Uma PESSOA FÍSICA também pode entrega nenhum ou vários PEDIDDO e um PEDIDO é entreue por nenhum ou várias PESSOAS FÍSICAS, VEÍCULO armazena o tipo do veículo, o nome do veículo e placa é utilizado para entrega nenhum ou vários PEDIDO e um PEDIDO é entregue com um veículo. Já a PESSOA JURÍDICA pode fornecer 1 ou vários PRODUTOS e um PRODUTO pode ser fornecido por 1 ou várias PESSOAS JURÍDICAS, PRODUTO por sua vez armazena: código, preço pelo qual foi comprado, preço pelo qual será vendido além do nome do produto. Por fim a tabela PEDIDO pode conter 1 ou vários PRODUTOS e um PRODUTO pode estar em nenhum ou vários PEDIDOS.
+>Neste modelo existe uma tabela PESSOA, a qual armazena um código e o nome da pessoa, existe também a tabela CONTATO que por sua vez guarda o tipo de contato e o contato em si, uma PESSOA pode ter 1 ou vários CONTATOS, mas um CONTATO só pode pertencer a uma pessoa. A tabela PESSOA é supertipo de duas outras tabelas, PESSOA JURÍDICA e PESSOA FÍSICA, estas por sua vez armazenam respectivamente cnpj e cpf. PESSOA FÍSICA por sua vez é supertipo de outras três tabelas, entregador que armazena a cnh, funcionário o qual armazena salário e cliente a qual guarda a data de cadastro. Existe a tabela ENDEREÇO, que guarda um código, tipo do logradouro, logradouro, numero do imóvel, cidade, unidade federativa, complemento e por fim o cep. Neste modelo um CLIENTE pode posuir 1 ou vários endereços, mas um endereço pertence a apenas um CLIENTE. Temos também a tabela PEDIDO, que armazena o método de pagamento, a data da compra e um código identificador. Um CLIENTE pode fazer 1 ou vários e pedidos, e 1 pedido é feito por apenas um CLIENTE. Um fFUNCIONÁRIO reserva vários PEDIDOS, e 1 pedido pode ser reservado por vários FUNCIONÁRIOS a depender do tamanho do pedido. um Entregador pode entregar nenhum ou vários PEDIDOS e um PEDIDO é entregue por apenas um entregador. Uma entrega também necessita de um VEÍCULO, o qual é uma tabela que armazena: placa, tipo do veículo, e o modelo do veículo, sendo que uma entrega necessita de um VEÍCULO, porém um VEÍCULO pode ser usado em nenhuma ou várias entregas. PESSOA JURÍDICA fornece 1 ou vários PRODUTOS e um PRODUTO pode ser fornecido por 1 ou várias PESSOAS JURÍDICAS, a relação fornece guarda o preço o qual a PESSOA JURÍDICA vende o PRODUTO. PRODUTO é um entidade que armazena: nome, preço a ser vendido e um código. Por fim, produto está contido em nenhum ou vários pedidos, assim como um PEDIDO deve conter 1 ou vários PRODUTOS, sendo armazenado também a quantidade dos produtos que estão contidos no PEDIDO.
 
 ### 4.PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
@@ -48,7 +48,7 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas (Aplicar os conceitos de normalização abordados).   
         
-![Alt text](https://github.com/gabrieldpbrunetti/trabalho/blob/main/conceitual_atualizado2.png)
+![Alt text](https://github.com/gabrieldpbrunetti/trabalho/blob/main/conceitual_grupo_atualizado3.png)
     
     
         
@@ -68,6 +68,18 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
  ---TABELA PESSOA_FISICA---<br>
  PESSOA_FISICA: tabela que armazena os dados de uma pessoa física.<br>
  CPF: armazena o cpf(cadastro de pessoa física) referente a uma pessoa física.<br>
+ 
+ ---TABELA CLIENTE---<br>
+ CLIENTE: tabela que guarda a data de cadastro do cliente no sistema.<br>
+ DATA_CADASTRO: armazena a data em que o clinte foi cadastrado, a fim de oferecer promoções baseadas em tempo.
+ 
+ ---TABELA FUNCIONARIO---<br>
+ FUNCIONARIO: tabela que guarda o salario do funcionário.<br>
+ SALARIO: armazena o salário do funcionário.
+ 
+ ---TABELA ENTREGADOR---<br>
+ ENTREGADOR: tabela responsável por armazenar a cnh do entregador.
+ CNH: armazena a carteira nacional de habilitação do entregador.
  
  ---TABELA PESSOA_JURIDICA---<br>
  PESSOA_JURIDICA: tabela que armazena os dados de uma pessoa jurídica.<br>
@@ -116,7 +128,7 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
         a) inclusão do esquema lógico do banco de dados
         b) verificação de correspondencia com o modelo conceitual 
         (não serão aceitos modelos que não estejam em conformidade)
- ![Alt text](https://github.com/gabrieldpbrunetti/trabalho/blob/main/logico_atualizado2.png)
+ ![Alt text](https://github.com/gabrieldpbrunetti/trabalho/blob/main/logico_atualizado3.png)
 
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
